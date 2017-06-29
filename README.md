@@ -24,6 +24,6 @@ npm run dev
 
 打包
 npm run build
-
+```
 
 ## 比较基础的一个项目，希望大家多提宝贵意见
