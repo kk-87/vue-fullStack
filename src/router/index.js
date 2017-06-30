@@ -5,10 +5,10 @@ Vue.use(Router)
 export default new Router({
   routes: [
     { // 路由重定向
-      path: '/', redirect: 'movie'
+      path: '/', redirect: '/index'
     },
     { // 主页
-      path: '/movie',
+      path: '/index',
       component:(resolve) => require(['views/index/index'], resolve),
     },
     { // 电影列表
@@ -22,6 +22,10 @@ export default new Router({
     { // 用户列表
       path:'/user/list',
       component:(resolve) => require(['views/user/list'], resolve),
+    },
+    { // 用户列表
+      path:'/crawler',
+      component:(resolve) => require(['views/crawler/crawler'], resolve),
     },
   ]
 })

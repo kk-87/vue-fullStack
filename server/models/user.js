@@ -1,8 +1,8 @@
 /**
  * 用户信息
  */
-var mongoose = require('./db'),
-  Schema = mongoose.Schema;
+const mongoose = require('./db')
+const Schema = mongoose.Schema;
 
 var UserSchema = new Schema({
   name: {type: String},     // 用户账号

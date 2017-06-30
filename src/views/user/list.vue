@@ -22,10 +22,12 @@
         </Form-item>
       </Form>
     </Modal>
+    <Back-top></Back-top>
   </div>
 </template>
 
 <script>
+  import _ from 'lodash'
   import {isEmpty} from '../../assets/js/common'
   export default {
     data () {
@@ -58,9 +60,9 @@
     },
     methods: {
       getUserLisr: function () {
+        console.log(_.last([1, 2, 3,4]));
         this.axios.get('/api/user').then(res => {
           this.userlist = res.data;
-          console.log(this.userlist);
         })
       },
       addUser: function () {
